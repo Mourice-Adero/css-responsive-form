@@ -2,6 +2,31 @@
   box-sizing: border-box;
 }
 
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 6px;
+}
+.col-25 {
+  width: 25%;
+  padding-right: 15px; /* adds some spacing between columns */
+}
+
+.col-75 {
+  width: 75%;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
 input[type="text"],
 select,
 textarea {
@@ -10,11 +35,6 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
   resize: vertical;
-}
-
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
 }
 
 input[type="submit"] {
@@ -30,25 +50,4 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background-color: #45a049;
-}
-
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 6px;
-}
-
-.col-25 {
-  width: 25%;
-  padding-right: 15px; /* adds some spacing between columns */
-}
-
-.col-75 {
-  width: 75%;
 }
